@@ -13,4 +13,8 @@ app.use(express.json())
 
 app.use('/',routes)
 
+app.get('/page1', (req, res) => {
+  res.send('Page 1')
+})
+
 export default app
